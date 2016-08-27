@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Policia.Model.Model;
 
 namespace Policia.Model.Config
 {
@@ -19,10 +20,10 @@ namespace Policia.Model.Config
         {
             if (Conexao())
             {
-                this.EventoDAO = new EventoDAO(Connection);
+                this.DesaparecidoDaoDAO = new DesaparecidoDao(this.Connection);
             }
         }
-        public EventoDAO EventoDAO { get; set; }
+        public DesaparecidoDao DesaparecidoDaoDAO { get; set; }
 
         public static ConfigDB Instance
         {
