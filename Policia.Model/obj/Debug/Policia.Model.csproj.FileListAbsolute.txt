@@ -1,0 +1,14 @@
+C:\Users\adowt\Documents\Visual Studio 2015\Projects\Policia\Policia.Model\bin\Debug\Policia.Model.dll
+C:\Users\adowt\Documents\Visual Studio 2015\Projects\Policia\Policia.Model\bin\Debug\Policia.Model.pdb
+C:\Users\adowt\Documents\Visual Studio 2015\Projects\Policia\Policia.Model\obj\Debug\Policia.Model.csprojResolveAssemblyReference.cache
+C:\Users\adowt\Documents\Visual Studio 2015\Projects\Policia\Policia.Model\obj\Debug\Policia.Model.dll
+C:\Users\adowt\Documents\Visual Studio 2015\Projects\Policia\Policia.Model\obj\Debug\Policia.Model.pdb
+C:\Users\Higor Senna\Desktop\ProjetoNovo\Policia.Model\bin\Debug\Policia.Model.dll
+C:\Users\Higor Senna\Desktop\ProjetoNovo\Policia.Model\bin\Debug\Policia.Model.pdb
+C:\Users\Higor Senna\Desktop\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.dll
+C:\Users\Higor Senna\Desktop\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.pdb
+D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\bin\Debug\Policia.Model.dll
+D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\bin\Debug\Policia.Model.pdb
+D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.csprojResolveAssemblyReference.cache
+D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.dll
+D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.pdb

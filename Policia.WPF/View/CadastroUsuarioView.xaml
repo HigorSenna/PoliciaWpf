@@ -1,0 +1,57 @@
+﻿<Window x:Class="Policia.WPF.View.CadastroUsuarioView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Policia.WPF.View"
+        mc:Ignorable="d"
+        Title="CadastroUsuarioView" Height="268.221" Width="459.534">
+    <Grid Margin="7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5">
+            <Label Content="Nome: "/>
+            <TextBox Text="{Binding Usuario.Nome,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Margin="5">
+            <Label Content="Departamento: "/>
+            <TextBox Text="{Binding Usuario.Departamento,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="5">
+            <Label Content="Patente: "/>
+            <TextBox Text="{Binding Usuario.Patente,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" Margin="5">
+            <Label Content="Login: "/>
+            <TextBox Text="{Binding Usuario.Login,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" Margin="5">
+            <Label Content="Senha: "/>
+            <TextBox Text="{Binding Usuario.Senha,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="0" Margin="5">
+            <Label Content="Idade: "/>
+            <TextBox Text="{Binding Usuario.Idade,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="1" Margin="5">
+            <Button Command="{Binding GravarUsuarioCommand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Content="Cadastrar" Margin="2"></Button>
+            <Button Command="{Binding CancelarUsuarioCommand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Content="Cancelar" Margin="2"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
