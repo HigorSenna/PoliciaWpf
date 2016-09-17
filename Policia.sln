@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Policia.WPF", "Policia.WPF\Policia.WPF.csproj", "{4CF32F75-2EB1-45DB-AF71-15E80A4F1AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Policia.Model", "Policia.Model\Policia.Model.csproj", "{AABDF10B-F992-4E94-A27F-2AA1EE9993E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Policia.NH", "Policia.NH\Policia.NH.csproj", "{4582870E-F098-4FC8-9BD2-819B7CF6AC24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4CF32F75-2EB1-45DB-AF71-15E80A4F1AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF32F75-2EB1-45DB-AF71-15E80A4F1AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF32F75-2EB1-45DB-AF71-15E80A4F1AB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AABDF10B-F992-4E94-A27F-2AA1EE9993E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AABDF10B-F992-4E94-A27F-2AA1EE9993E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AABDF10B-F992-4E94-A27F-2AA1EE9993E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AABDF10B-F992-4E94-A27F-2AA1EE9993E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4582870E-F098-4FC8-9BD2-819B7CF6AC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4582870E-F098-4FC8-9BD2-819B7CF6AC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4582870E-F098-4FC8-9BD2-819B7CF6AC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4582870E-F098-4FC8-9BD2-819B7CF6AC24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

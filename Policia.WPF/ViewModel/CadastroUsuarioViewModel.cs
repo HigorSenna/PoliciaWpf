@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Policia.WPF.View;
-using Policia.Model.Model;
+﻿using Policia.WPF.View;
 using System.Windows.Input;
 using Cronometrage.WPF.Property;
+using Policia.NH.Model;
 
 namespace Policia.WPF.ViewModel
 {

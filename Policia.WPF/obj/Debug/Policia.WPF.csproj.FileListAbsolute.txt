@@ -62,3 +62,12 @@ D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\obj\Debug\View\GerenciarUsuarioVie
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\obj\Debug\Policia.WPF.g.resources
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\obj\Debug\Policia.WPF.Properties.Resources.resources
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\obj\Debug\Policia.WPF.csproj.GenerateResource.Cache
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.csprojResolveAssemblyReference.cache
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroDesaparecidoView.baml
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\MainWindow.g.cs
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroDesaparecidoView.g.cs
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroUsuarioView.g.cs
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarUsuarioView.g.cs
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\App.g.cs
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF_MarkupCompile.cache
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF_MarkupCompile.lref

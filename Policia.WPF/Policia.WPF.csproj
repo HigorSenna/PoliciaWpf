@@ -124,9 +124,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Policia.Model\Policia.Model.csproj">
-      <Project>{aabdf10b-f992-4e94-a27f-2aa1ee9993e1}</Project>
-      <Name>Policia.Model</Name>
+    <ProjectReference Include="..\Policia.NH\Policia.NH.csproj">
+      <Project>{4582870e-f098-4fc8-9bd2-819b7cf6ac24}</Project>
+      <Name>Policia.NH</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

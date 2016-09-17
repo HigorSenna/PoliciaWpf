@@ -1,13 +1,9 @@
 ﻿using Cronometrage.WPF.Property;
-using Policia.Model.Model;
 using Policia.WPF.View;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
+using Policia.NH.Model;
 
 namespace Policia.WPF.ViewModel
 {

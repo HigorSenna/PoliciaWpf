@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\obj\Debug\
+D:\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\
 Policia.WPF
 none
 false
 DEBUG;TRACE
-D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.WPF\App.xaml
+D:\GitHub\PoliciaWpf\Policia.WPF\App.xaml
 4796701782
 
 18797534899
-1431212903
+14-30555474
 MainWindow.xaml;View\CadastroDesaparecidoView.xaml;View\CadastroUsuarioView.xaml;View\GerenciarUsuarioView.xaml;
 
 True

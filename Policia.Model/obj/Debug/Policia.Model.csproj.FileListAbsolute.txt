@@ -12,3 +12,9 @@ D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\bin\Debug\Policia.Model.pdb
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.csprojResolveAssemblyReference.cache
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.dll
 D:\GitHub\ProjetoNovo\ProjetoNovo\Policia.Model\obj\Debug\Policia.Model.pdb
+D:\GitHub\PoliciaWpf\Policia.Model\bin\Debug\Policia.Model.dll
+D:\GitHub\PoliciaWpf\Policia.Model\bin\Debug\Policia.Model.pdb
+D:\GitHub\PoliciaWpf\Policia.Model\bin\Debug\MySql.Data.dll
+D:\GitHub\PoliciaWpf\Policia.Model\obj\Debug\Policia.Model.csprojResolveAssemblyReference.cache
+D:\GitHub\PoliciaWpf\Policia.Model\obj\Debug\Policia.Model.dll
+D:\GitHub\PoliciaWpf\Policia.Model\obj\Debug\Policia.Model.pdb
