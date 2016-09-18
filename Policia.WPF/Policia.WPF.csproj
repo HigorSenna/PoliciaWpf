@@ -63,16 +63,24 @@
     <Compile Include="Utils\FileWriter.cs" />
     <Compile Include="ViewModel\CadastroDesaparecidoViewModel.cs" />
     <Compile Include="ViewModel\CadastroUsuarioViewModel.cs" />
+    <Compile Include="ViewModel\GerenciarDesaparecidoViewModel.cs" />
     <Compile Include="ViewModel\GerenciarUsuarioViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\VisualizarDesaparecidoViewModel.cs" />
     <Compile Include="View\CadastroDesaparecidoView.xaml.cs">
       <DependentUpon>CadastroDesaparecidoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CadastroUsuarioView.xaml.cs">
       <DependentUpon>CadastroUsuarioView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\GerenciarDesaparecidoView.xaml.cs">
+      <DependentUpon>GerenciarDesaparecidoView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\GerenciarUsuarioView.xaml.cs">
       <DependentUpon>GerenciarUsuarioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VisualizarDesaparecidoView.xaml.cs">
+      <DependentUpon>VisualizarDesaparecidoView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -94,7 +102,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\GerenciarDesaparecidoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\GerenciarUsuarioView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VisualizarDesaparecidoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

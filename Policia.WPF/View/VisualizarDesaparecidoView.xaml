@@ -1,0 +1,13 @@
+﻿<Window x:Class="Policia.WPF.View.VisualizarDesaparecidoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Policia.WPF.View"
+        mc:Ignorable="d"
+        Title="VisualizarDesaparecidoView" Height="433.538" Width="372.458">
+    <Grid>
+        <Image Source="{Binding Imagem}" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"></Image>
+        <TextBox Text="{Binding Desaparecido.Nome, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ></TextBox>
+    </Grid>
+</Window>

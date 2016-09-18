@@ -96,6 +96,17 @@ namespace Policia.WPF.ViewModel
                 viewModel.Exibir();
             });
 
+            GerenciarDesaparecidoCommand = new Command(p =>
+            {
+                var view = new GerenciarDesaparecidoView();
+                var viewModel = new GerenciarDesaparecidoViewModel();
+
+                view.DataContext = viewModel;
+                viewModel.View = view;
+
+                viewModel.Exibir();
+            });
+
             #endregion
         }
     }

@@ -71,7 +71,7 @@ namespace Policia.WPF.ViewModel
             //Cria uma tela de seleção de arquivo
             var fileDialog = new System.Windows.Forms.OpenFileDialog();
 
-            fileDialog.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+            fileDialog.Filter = "JPG Files (*.jpg)|*.jpg|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|GIF Files (*.gif)|*.gif";
 
             //Mostra a tela e guarda a resposta no resultado
             var result = fileDialog.ShowDialog();
@@ -98,6 +98,12 @@ namespace Policia.WPF.ViewModel
 
         public void Exibir() 
         {
+            this.View.ShowDialog();
+        }
+
+        public void Alterar(Desaparecido desaparecido)
+        {
+            this.Desaparecido = desaparecido;
             this.View.ShowDialog();
         }
     }

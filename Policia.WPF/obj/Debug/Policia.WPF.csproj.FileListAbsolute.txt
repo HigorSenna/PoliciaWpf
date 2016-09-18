@@ -97,3 +97,7 @@ C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.Pro
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.csproj.GenerateResource.Cache
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.exe
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.pdb
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarDesaparecidoView.g.cs
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarDesaparecidoView.baml
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.g.cs
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.baml

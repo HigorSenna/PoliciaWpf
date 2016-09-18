@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\App.xaml
-4796701782
+6-1884191335
 
-161894980410
+20-857746964
 15875882663
-MainWindow.xaml;View\CadastroDesaparecidoView.xaml;View\CadastroUsuarioView.xaml;View\GerenciarUsuarioView.xaml;
+MainWindow.xaml;View\CadastroDesaparecidoView.xaml;View\CadastroUsuarioView.xaml;View\GerenciarDesaparecidoView.xaml;View\GerenciarUsuarioView.xaml;View\VisualizarDesaparecidoView.xaml;
 
 False
 

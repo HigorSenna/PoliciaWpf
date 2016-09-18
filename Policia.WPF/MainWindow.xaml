@@ -17,7 +17,7 @@
 
                 <MenuItem Header="_Desaparecido">
                     <MenuItem Header="Cadastrar" Command="{Binding CadastrarDesaparecidoCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></MenuItem>
-                    <MenuItem Header="Gerenciar"></MenuItem>
+                    <MenuItem Header="Gerenciar" Command="{Binding GerenciarDesaparecidoCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></MenuItem>
 
                     <MenuItem.Style>
                         <Style TargetType="MenuItem">

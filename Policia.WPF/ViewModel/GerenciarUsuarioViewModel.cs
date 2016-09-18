@@ -45,7 +45,10 @@ namespace Policia.WPF.ViewModel
             this.ExcluirUsuarioCommand = new Command((p) =>
             {
                 if (UsuarioSelecionado != null)
-                    ExcluirUsuario();
+                {
+                    ConfigDB.Instance.UsuarioRepository.Excluir(UsuarioSelecionado);
+                    UpdateUsuarios();
+                }
                 else
                     MessageBox.Show("Selecione um usuário!");                
             });
@@ -96,12 +99,6 @@ namespace Policia.WPF.ViewModel
         public void Exibir()
         {
             this.View.ShowDialog();
-        }
-
-        private void ExcluirUsuario()
-        {
-            ConfigDB.Instance.UsuarioRepository.Excluir(UsuarioSelecionado);
-            UpdateUsuarios();
         }
 
         private void UpdateUsuarios()
