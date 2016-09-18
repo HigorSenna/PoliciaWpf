@@ -61,7 +61,7 @@ namespace Policia.NH.Config
                 {
                     //Dialeto de Banco
                     c.Dialect<NHibernate.Dialect.MySQLDialect>();
-                    //Conexao String
+                    //Conexao string
                     c.ConnectionString = StringConexao;
                     //Drive de conexão com o banco
                     c.Driver<NHibernate.Driver.MySqlDataDriver>();
@@ -95,7 +95,7 @@ namespace Policia.NH.Config
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
                 return false;
             }
         }

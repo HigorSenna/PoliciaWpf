@@ -1,0 +1,8 @@
+#Ignora todas bin e obj
+**/bin/
+**/obj/
+
+*/bin/
+*/obj/
+
+**/packages

@@ -9,3 +9,15 @@ D:\GitHub\PoliciaWpf\Policia.NH\bin\Debug\Iesi.Collections.xml
 D:\GitHub\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.xml
 D:\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.dll
 D:\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.pdb
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\Policia.NH.dll
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\Policia.NH.pdb
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.dll
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\Iesi.Collections.dll
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.dll
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.pdb
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.xml
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\Iesi.Collections.xml
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.xml
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.csprojResolveAssemblyReference.cache
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.dll
+C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.pdb

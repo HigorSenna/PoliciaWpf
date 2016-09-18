@@ -26,11 +26,11 @@ namespace Policia.NH.Model
                 m.Generator(Generators.Identity);
             });
 
-            Property<String>(x => x.Nome);
-            Property<String>(x => x.Departamento);
-            Property<String>(x => x.Patente);
-            Property<String>(x => x.Login);
-            Property<String>(x => x.Senha);
+            Property<string>(x => x.Nome);
+            Property<string>(x => x.Departamento);
+            Property<string>(x => x.Patente);
+            Property<string>(x => x.Login);
+            Property<string>(x => x.Senha);
             Property<int>(x => x.Idade);
         }
     }

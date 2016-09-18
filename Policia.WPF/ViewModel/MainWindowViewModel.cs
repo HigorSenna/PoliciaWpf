@@ -8,7 +8,7 @@ namespace Policia.WPF.ViewModel
 {
     public class MainWindowViewModel : NotifyPropertyBase
     {
-        
+
         public ICommand CadastrarUsuarioCommand { get; set; }
 
         public ICommand GerenciarUsuarioCommand { get; set; }
@@ -20,14 +20,10 @@ namespace Policia.WPF.ViewModel
         public ICommand LoginCommand { get; set; }
 
         public Usuario UsuarioLogado;
-        
-        public List<Desaparecido> Desaparecidos;
-        public List<Usuario> Usuarios;
 
         public MainWindowViewModel()
         {
-            #region Usuario
-            Usuarios = new List<Usuario>();
+            #region Usuario            
 
             CadastrarUsuarioCommand = new Command((p) =>
             {
@@ -37,13 +33,13 @@ namespace Policia.WPF.ViewModel
                 view.DataContext = viewModel;
                 viewModel.View = view;
 
-                viewModel.Show();
+                viewModel.Exibir();
             });
 
             GerenciarUsuarioCommand = new Command((p) =>
             {
                 var view = new GerenciarUsuarioView();
-                var viewModel = new GerenciarUsuarioViewModel(new System.Collections.ObjectModel.ObservableCollection<Usuario>(Usuarios));
+                var viewModel = new GerenciarUsuarioViewModel();
 
                 view.DataContext = viewModel;
                 viewModel.View = view;
@@ -54,17 +50,18 @@ namespace Policia.WPF.ViewModel
             #endregion
 
             #region Desaparecido
-                CadastrarDesaparecidoCommand = new Command(p =>
-                {
-                    var view = new CadastroDesaparecidoView();
-                    var viewModel = new CadastroDesaparecidoViewModel();
 
-                    view.DataContext = viewModel;
-                    viewModel.View = view;
+            CadastrarDesaparecidoCommand = new Command(p =>
+            {
+                var view = new CadastroDesaparecidoView();
+                var viewModel = new CadastroDesaparecidoViewModel();
 
-                    viewModel.Show();
-                });
-            
+                view.DataContext = viewModel;
+                viewModel.View = view;
+
+                viewModel.Exibir();
+            });
+
             #endregion
         }
     }

@@ -12,14 +12,19 @@ namespace Policia.NH.Model
         }
 
         public virtual int Id { get; set; }
-        public virtual String Nome{get;set;}
-        public virtual String UltimoLugarVisto { get; set; }
-        public virtual String Contato { get; set; }
+
+        public virtual string Nome { get; set; }
+
+        public virtual string UltimoLugarVisto { get; set; }
+
+        public virtual string Contato { get; set; }
 
 #warning Verificar como fica o Byte no banco
         public virtual byte[] Imagem { get; set; }
-        public DateTime DataDesaparecimento { get; set; }
-        public Caracteristica Caracteristica { get; set; }
+
+        public virtual DateTime DataDesaparecimento { get; set; }
+
+        public virtual Caracteristica Caracteristica { get; set; }
     }
 
     public class DesaparecidoMap : ClassMapping<Desaparecido>
@@ -33,9 +38,9 @@ namespace Policia.NH.Model
                 m.Generator(Generators.Identity);
             });
 
-            Property<String>(x => x.Nome);
-            Property<String>(x => x.UltimoLugarVisto);
-            Property<String>(x => x.Contato);
+            Property<string>(x => x.Nome);
+            Property<string>(x => x.UltimoLugarVisto);
+            Property<string>(x => x.Contato);
             Property<DateTime>(x => x.DataDesaparecimento);
 
 #warning Verificar como fica o Byte no banco
@@ -44,7 +49,8 @@ namespace Policia.NH.Model
 #warning Verificar o One to One com caracteristica
             OneToOne<Caracteristica>(x => x.Caracteristica, m =>
             {
-
+                m.Cascade(Cascade.All);
+                m.Key(k => k.Column("IdEvento"));
             });
         }
     }

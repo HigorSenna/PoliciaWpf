@@ -2,6 +2,7 @@
 using System.Windows.Input;
 using Cronometrage.WPF.Property;
 using Policia.NH.Model;
+using Policia.NH.Config;
 
 namespace Policia.WPF.ViewModel
 {
@@ -33,10 +34,10 @@ namespace Policia.WPF.ViewModel
 
         private void Gravar(Usuario usuario) 
         {
-            //DAO.USUARIO.gravar(Usuario);
+            ConfigDB.Instance.UsuarioRepository.Gravar(usuario);
         }
 
-        public void Show()
+        public void Exibir()
         {
             this.View.ShowDialog();
         }        

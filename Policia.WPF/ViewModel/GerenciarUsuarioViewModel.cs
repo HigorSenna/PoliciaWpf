@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using Policia.NH.Model;
+using Policia.NH.Config;
 
 namespace Policia.WPF.ViewModel
 {
@@ -29,21 +30,19 @@ namespace Policia.WPF.ViewModel
             }
         }
 
-        private ObservableCollection<Usuario> todosUsuarios;
-
         public Usuario UsuarioSelecionado { get; set; }
 
         public string ParametroBusca { get; set; }
 
-        public GerenciarUsuarioViewModel(ObservableCollection<Usuario> usuarios)
+        public GerenciarUsuarioViewModel()
         {
-            this.Usuarios = usuarios;
-            this.todosUsuarios = this.Usuarios;
+            //Coloca todos os usuarios para exibir quando a tela é instanciada
+            UpdateUsuarios();
 
             this.ExcluirUsuarioCommand = new Command((p) =>
             {
                 if (UsuarioSelecionado != null)
-                    this.Usuarios.Remove(UsuarioSelecionado);
+                    ExcluirUsuario();
             });
 
             this.BuscarCommand = new Command((p) =>
@@ -52,12 +51,15 @@ namespace Policia.WPF.ViewModel
                 //E retorno para o método não continuar
                 if (ParametroBusca == string.Empty)
                 {
-                    this.Usuarios = this.todosUsuarios;
+                    UpdateUsuarios();
                     return;
                 }
+                
+                //Pega todos independente
+                var usuarios = ConfigDB.Instance.UsuarioRepository.GetAll();
 
-                //Busta todos que tenham alguma propriedade igual o parametro busca
-                var busca = this.todosUsuarios
+                //Busca todos que tenham alguma propriedade igual o parametro busca
+                var busca = usuarios
                 .Where(u => (u.Nome == ParametroBusca) || (u.Login == ParametroBusca) || (u.Patente == ParametroBusca));
 
                 //Seta a lista da tela para o resultado da busca
@@ -67,9 +69,19 @@ namespace Policia.WPF.ViewModel
 
         public void Exibir()
         {
-            //this.Usuarios = PEGARDOBANCO
-
             this.View.ShowDialog();
+        }
+
+        private void ExcluirUsuario()
+        {
+            ConfigDB.Instance.UsuarioRepository.Excluir(UsuarioSelecionado);
+            UpdateUsuarios();
+        }
+
+        private void UpdateUsuarios()
+        {
+            var usus = ConfigDB.Instance.UsuarioRepository.GetAll();
+            this.Usuarios = new ObservableCollection<Usuario>(usus);
         }
     }
 }
