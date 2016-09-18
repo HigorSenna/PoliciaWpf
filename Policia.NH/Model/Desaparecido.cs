@@ -8,7 +8,6 @@ namespace Policia.NH.Model
     {
         public Desaparecido()
         {
-            this.Caracteristica = new Caracteristica();
         }
 
         public virtual int Id { get; set; }
@@ -19,7 +18,6 @@ namespace Policia.NH.Model
 
         public virtual string Contato { get; set; }
 
-#warning Verificar como fica o Byte no banco
         public virtual byte[] Imagem { get; set; }
 
         public virtual DateTime DataDesaparecimento { get; set; }
@@ -43,14 +41,13 @@ namespace Policia.NH.Model
             Property<string>(x => x.Contato);
             Property<DateTime>(x => x.DataDesaparecimento);
 
-#warning Verificar como fica o Byte no banco
             Property<byte[]>(x => x.Imagem);
 
-#warning Verificar o One to One com caracteristica
             OneToOne<Caracteristica>(x => x.Caracteristica, m =>
             {
                 m.Cascade(Cascade.All);
-                m.Key(k => k.Column("IdEvento"));
+                m.Constrained(true);
+                m.ForeignKey("CaracteristicaID");
             });
         }
     }

@@ -3,6 +3,7 @@ using System.Windows.Input;
 using Cronometrage.WPF.Property;
 using Policia.NH.Model;
 using Policia.NH.Config;
+using System.Windows;
 
 namespace Policia.WPF.ViewModel
 {
@@ -22,7 +23,10 @@ namespace Policia.WPF.ViewModel
 
             this.GravarUsuarioCommand = new Command((p) => 
             {
-                Gravar(Usuario);
+                if (!Gravar(Usuario))
+                    MessageBox.Show("Ocorreu um erro!");
+
+                this.View.Close();
             });
 
             this.CancelarUsuarioCommand = new Command((p) =>
@@ -32,14 +36,20 @@ namespace Policia.WPF.ViewModel
             });
         }
 
-        private void Gravar(Usuario usuario) 
+        private bool Gravar(Usuario usuario) 
         {
-            ConfigDB.Instance.UsuarioRepository.Gravar(usuario);
+            return ConfigDB.Instance.UsuarioRepository.Gravar(usuario);
         }
 
         public void Exibir()
         {
             this.View.ShowDialog();
-        }        
+        }
+
+        public void Alterar(Usuario usuario)
+        {
+            this.Usuario = usuario;
+            this.View.ShowDialog();
+        }
     }
 }

@@ -17,7 +17,6 @@ namespace Policia.NH.Model
 
         public Caracteristica()
         {
-            this.Desaparecido = new Desaparecido();
         }
     }
 
@@ -42,7 +41,10 @@ namespace Policia.NH.Model
 #warning Verificar One to One com desaparecido
             OneToOne<Desaparecido>(x => x.Desaparecido, m =>
             {
-                
+                m.Cascade(Cascade.All);
+                m.Constrained(true);
+                m.PropertyReference(x => x.Caracteristica);
+                m.ForeignKey("DesaparecidoID");
             });
         }
     }

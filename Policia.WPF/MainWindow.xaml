@@ -18,6 +18,17 @@
                 <MenuItem Header="_Desaparecido">
                     <MenuItem Header="Cadastrar" Command="{Binding CadastrarDesaparecidoCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></MenuItem>
                     <MenuItem Header="Gerenciar"></MenuItem>
+
+                    <MenuItem.Style>
+                        <Style TargetType="MenuItem">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsLogado, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Value="True">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </MenuItem.Style>
                 </MenuItem>                
 
                 <MenuItem Header="_Sobre"></MenuItem>
@@ -39,6 +50,17 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Vertical" DockPanel.Dock="Left" Grid.Row="1">
+                    <StackPanel.Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsLogado, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                    
                     <Label Content="Área administrativa" 
                                Grid.Row="0"
                                Grid.Column="0"
@@ -58,13 +80,14 @@
                         <!--Loginbox-->
                         <Label Content="Login: " 
                                Grid.Row="0"
-                               Grid.Column="0"
+                               Grid.Column="0"                               
                                />
 
                         <TextBox 
                             Grid.Row="0" 
                             Grid.Column="1"
-                            Margin="0, 5"/>
+                            Margin="0, 5"
+                            Text="{Binding Login, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                         <!--Senha box-->
                         <Label Content="Senha: " 
@@ -75,11 +98,13 @@
                         <TextBox 
                             Grid.Row="1" 
                             Grid.Column="1"
-                            Margin="0, 5"/>
+                            Margin="0, 5"
+                            Text="{Binding Senha, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                         <Button Content="Entrar"
                                 Grid.Row="2"
-                                Grid.Column="1"/>
+                                Grid.Column="1"
+                                Command="{Binding LoginCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                     </Grid>
                 </StackPanel>
 

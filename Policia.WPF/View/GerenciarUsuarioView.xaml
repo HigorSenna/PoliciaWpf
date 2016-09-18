@@ -30,8 +30,20 @@
                   SelectedItem="{Binding UsuarioSelecionado, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
         <GroupBox Header="Usuários" Grid.Row="2" Margin="10">
-            <Button Content="Excluir"
-                    Command="{Binding ExcluirUsuarioCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Button>
+            <Grid>                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Button Content="Excluir"
+                        Grid.Column="0"
+                        Command="{Binding ExcluirUsuarioCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Button>
+                
+                <Button Content="Alterar"
+                        Grid.Column="1"
+                        Command="{Binding AlterarUsuarioCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Button>
+            </Grid>
         </GroupBox>
     </Grid>
 </Window>

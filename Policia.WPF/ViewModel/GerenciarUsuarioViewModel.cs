@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Input;
 using Policia.NH.Model;
 using Policia.NH.Config;
+using System.Windows;
 
 namespace Policia.WPF.ViewModel
 {
@@ -13,6 +14,8 @@ namespace Policia.WPF.ViewModel
         public GerenciarUsuarioView View { get; set; }
 
         public ICommand ExcluirUsuarioCommand { get; set; }
+
+        public ICommand AlterarUsuarioCommand { get; set; }
 
         public ICommand BuscarCommand { get; set; }
 
@@ -43,6 +46,29 @@ namespace Policia.WPF.ViewModel
             {
                 if (UsuarioSelecionado != null)
                     ExcluirUsuario();
+                else
+                    MessageBox.Show("Selecione um usuário!");                
+            });
+
+            this.AlterarUsuarioCommand = new Command((p) => 
+            {
+                if (UsuarioSelecionado != null)
+                {
+                    var view = new CadastroUsuarioView();
+                    var viewModel = new CadastroUsuarioViewModel();
+
+                    viewModel.View = view;
+                    view.DataContext = viewModel;
+
+                    //Chama a tela de alterar e quando voltar atualiza a lista
+                    viewModel.Alterar(UsuarioSelecionado);
+
+                    UpdateUsuarios();
+                }
+                else
+                {
+                    MessageBox.Show("Selecione um usuário!");
+                }
             });
 
             this.BuscarCommand = new Command((p) =>
@@ -60,7 +86,7 @@ namespace Policia.WPF.ViewModel
 
                 //Busca todos que tenham alguma propriedade igual o parametro busca
                 var busca = usuarios
-                .Where(u => (u.Nome == ParametroBusca) || (u.Login == ParametroBusca) || (u.Patente == ParametroBusca));
+                .Where(u => (u.Nome.Contains(ParametroBusca)) || (u.Login.Contains(ParametroBusca)) || (u.Patente.Contains(ParametroBusca)));
 
                 //Seta a lista da tela para o resultado da busca
                 this.Usuarios = new ObservableCollection<Usuario>(busca);

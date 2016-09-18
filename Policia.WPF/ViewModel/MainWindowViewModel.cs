@@ -3,6 +3,7 @@ using Policia.WPF.View;
 using System.Collections.Generic;
 using System.Windows.Input;
 using Policia.NH.Model;
+using Policia.WPF.Service;
 
 namespace Policia.WPF.ViewModel
 {
@@ -19,10 +20,43 @@ namespace Policia.WPF.ViewModel
 
         public ICommand LoginCommand { get; set; }
 
-        public Usuario UsuarioLogado;
+        private bool isLogado = false;
+        public bool IsLogado
+        {
+            get
+            {
+                return isLogado;
+            }
+            set
+            {
+                if (value != isLogado)
+                    isLogado = value;
+
+                OnPropertyChanged("IsLogado");
+            }
+        }
+
+        public string Login { get; set; }
+
+        public string Senha { get; set; }
 
         public MainWindowViewModel()
         {
+            #region Main
+
+            LoginCommand = new Command((p) => 
+            {
+                var usuario = new Usuario()
+                {
+                    Login = this.Login,
+                    Senha = this.Senha
+                };
+
+                IsLogado = AutenticacaoService.Autenticado(usuario);
+            });
+
+            #endregion
+
             #region Usuario            
 
             CadastrarUsuarioCommand = new Command((p) =>

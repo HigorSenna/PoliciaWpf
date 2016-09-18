@@ -5,6 +5,7 @@
     <Grid Margin="0,0,0,-1">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="570"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="132" Margin="10,163,0,0" Stroke="Black" VerticalAlignment="Top" Width="570"/>
+        
         <Label Content="Nome:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="46"/>
         <Label Content="Ultimo Lugar Visto:" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
         <Label Content="Telefone da família:" HorizontalAlignment="Left" Margin="297,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.546,-0.778"/>
@@ -17,19 +18,28 @@
         <Label Content="Cor Da Pele:" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top"/>
         <Label HorizontalAlignment="Left" Margin="29,285,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <Label Content="Peso:" HorizontalAlignment="Left" Margin="297,194,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Caracteristica.CorDoCabelo,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox Text="{Binding Caracteristica.CorDaPele,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox Text="{Binding Desaparecido.Contato,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="435,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
-        <TextBox Text="{Binding Caracteristica.CorDosOlhos,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox Text="{Binding Desaparecido.UltimoLugarVisto,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="126,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox Text="{Binding Desaparecido.Nome,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="126,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox Text="{Binding Caracteristica.Peso,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="409,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
-        <Label Content="Altura Aproximada:" HorizontalAlignment="Left" Margin="297,222,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Caracteristica.AlturaAproximada,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="409,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
-        <Button Command="{Binding BotaoCadastrar,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Content="CADASTRAR" HorizontalAlignment="Left" Margin="282,313,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="LIMPAR" HorizontalAlignment="Left" Margin="196,313,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.755,0.591"/>
-        <DatePicker HorizontalAlignment="Left" Margin="435,43,0,0" VerticalAlignment="Top" DataContext="{Binding Desaparecido.DataDesaparecimento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="111"/>
+
         <Label Content="Idade" HorizontalAlignment="Left" Margin="297,253,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtIdade" HorizontalAlignment="Left" Height="23" Margin="409,256,0,0" TextWrapping="Wrap" Text="{Binding Caracteristica.Idade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Altura Aproximada:" HorizontalAlignment="Left" Margin="297,222,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Text="{Binding Desaparecido.Nome,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="126,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <DatePicker DataContext="{Binding Desaparecido.DataDesaparecimento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="435,43,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox Text="{Binding Desaparecido.UltimoLugarVisto,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="126,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Text="{Binding Desaparecido.Contato,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="435,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+
+        <Button Command="{Binding EscolherArquivoCommand, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" x:Name="button" Content="Escolher.." HorizontalAlignment="Left" Margin="81,103,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="{Binding NomeArquivo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="161,101,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Text="{Binding Desaparecido.Caracteristica.CorDoCabelo,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Text="{Binding Desaparecido.Caracteristica.CorDaPele,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Text="{Binding Desaparecido.Caracteristica.CorDosOlhos,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="105,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Text="{Binding Desaparecido.Caracteristica.Peso,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="409,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <TextBox Text="{Binding Desaparecido.Caracteristica.AlturaAproximada,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="409,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <TextBox Text="{Binding Desaparecido.Caracteristica.Idade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="txtIdade" HorizontalAlignment="Left" Height="23" Margin="409,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+
+        <Button Command="{Binding CadastrarCommand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Content="Cadastrar" HorizontalAlignment="Left" Margin="282,313,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding CancelarCommand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Content="Cancelar" HorizontalAlignment="Left" Margin="196,313,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.755,0.591"/>       
+
+
     </Grid>
 </Window>
