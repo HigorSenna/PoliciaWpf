@@ -1,6 +1,7 @@
 ﻿using System;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
+using System.Collections.Generic;
 
 namespace Policia.NH.Model
 {
@@ -13,13 +14,23 @@ namespace Policia.NH.Model
         public virtual double AlturaAproximada { get; set; }
         public virtual double Peso { get; set; }
         public virtual int Idade { get; set; }
-        public virtual Desaparecido Desaparecido { get; set; }
+        public virtual Desaparecido Desaparecido { get; set; }        
 
         public Caracteristica()
+        {            
+        }
+
+        public override string ToString()
         {
+            return "Cabelo " 
+                + CorDoCabelo + ", Olhos " 
+                + CorDosOlhos + ", Pele " 
+                + CorDaPele + ", Altura "
+                + AlturaAproximada + ", Peso " + Peso 
+                +", Idade " + Idade; 
         }
     }
-
+    
     public class CaracteristicaMap : ClassMapping<Caracteristica>
     {
         public CaracteristicaMap()
@@ -47,5 +58,5 @@ namespace Policia.NH.Model
                 m.ForeignKey("DesaparecidoID");
             });
         }
-    }
+    }   
 }

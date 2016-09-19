@@ -21,3 +21,17 @@ C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.xml
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.csprojResolveAssemblyReference.cache
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.dll
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\Policia.NH.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\Policia.NH.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\Iesi.Collections.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\MySql.Data.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\FluentNHibernate.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\Iesi.Collections.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\MySql.Data.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\bin\Debug\NHibernate.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.NH\obj\Debug\Policia.NH.csprojResolveAssemblyReference.cache

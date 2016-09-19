@@ -20,8 +20,8 @@ namespace Policia.WPF.ViewModel
         public BitmapSource Imagem
         {
             get
-            {
-                return BitmapSource.Create(20, 20, 300, 300, PixelFormats.Indexed8, BitmapPalettes.Gray256, Desaparecido.Imagem, 2);
+            {              
+              return null;                
             }
         }
 

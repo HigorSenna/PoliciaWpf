@@ -7,7 +7,24 @@
         mc:Ignorable="d"
         Title="VisualizarDesaparecidoView" Height="433.538" Width="372.458">
     <Grid>
-        <Image Source="{Binding Imagem}" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"></Image>
-        <TextBox Text="{Binding Desaparecido.Nome, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ></TextBox>
+        <Image Source="{Binding Imagem}" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"/>
+
+        <Label x:Name="label" Content="{Binding Desaparecido.Nome,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Em" HorizontalAlignment="Left" Margin="11,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy1" Content="Contato:" HorizontalAlignment="Left" Margin="203,265,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy" Content="Desaparecido dia" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy2" Content="Cor do Cabelo" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy3" Content="{Binding Desaparecido.Caracteristica.CorDoCabelo,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="101,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy4" Content="Cor dos Olhos" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy5" Content="{Binding Desaparecido.Caracteristica.CorDosOlhos,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="102,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy6" Content="Cor da Pele" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy7" Content="{Binding Desaparecido.Caracteristica.CorDaPele,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="101,159,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy8" Content="{Binding Desaparecido.AlturaAproximada,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="145,3,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy9" Content="Idade" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy10" Content="{Binding Desaparecido.Caracteristica.Idade,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="102,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy11" Content="{Binding Desaparecido.UltimoLugarVisto,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy12" Content="{Binding Desaparecido.DataDesaparecimento,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy13" Content="{Binding Desaparecido.Contato,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="263,265,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
