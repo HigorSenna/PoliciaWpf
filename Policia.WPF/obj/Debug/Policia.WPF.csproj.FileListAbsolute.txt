@@ -101,3 +101,35 @@ C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarD
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarDesaparecidoView.baml
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.g.cs
 C:\Users\adowt\Documents\GitHub\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Policia.WPF.exe.config
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Policia.WPF.exe
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Policia.WPF.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\MySql.Data.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Policia.NH.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\NHibernate.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Iesi.Collections.dll
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Policia.NH.pdb
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\MySql.Data.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\NHibernate.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\bin\Debug\Iesi.Collections.xml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.csprojResolveAssemblyReference.cache
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroDesaparecidoView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\MainWindow.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroDesaparecidoView.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroUsuarioView.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarDesaparecidoView.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarUsuarioView.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\App.g.cs
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF_MarkupCompile.cache
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF_MarkupCompile.lref
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\MainWindow.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\CadastroUsuarioView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarDesaparecidoView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\GerenciarUsuarioView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\View\VisualizarDesaparecidoView.baml
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.g.resources
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.Properties.Resources.resources
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.csproj.GenerateResource.Cache
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.exe
+D:\Higor Senna\C#\PoliciaWpf\Policia.WPF\obj\Debug\Policia.WPF.pdb

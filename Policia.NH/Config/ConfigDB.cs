@@ -16,7 +16,7 @@ namespace Policia.NH.Config
     {
         public static string StringConexao =
             "Persist Security Info=False;server=localhost;port=3306;" +
-            "database=policia;uid=root;pwd=root";
+            "database=policia;uid=root;pwd=aluno";
 
         private ISessionFactory SessionFactory;
 
