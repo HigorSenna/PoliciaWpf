@@ -23,7 +23,7 @@
         <Label x:Name="label2_Copy9" Content="Idade" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2_Copy10" Content="{Binding Desaparecido.Caracteristica.Idade,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="102,190,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2_Copy11" Content="{Binding Desaparecido.UltimoLugarVisto,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2_Copy12" Content="{Binding Desaparecido.DataDesaparecimento,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy12" Content="{Binding DataDesaparecimento}" HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2_Copy13" Content="{Binding Desaparecido.Contato,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="263,265,0,0" VerticalAlignment="Top"/>
 
     </Grid>

@@ -25,6 +25,14 @@ namespace Policia.WPF.ViewModel
             }
         }
 
+        public string DataDesaparecimento
+        {
+            get
+            {
+                return Desaparecido.DataDesaparecimento.ToShortDateString();
+            }
+        }
+
         public VisualizarDesaparecidoViewModel()
         {
 
