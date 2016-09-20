@@ -3,9 +3,13 @@ using Policia.NH.Model;
 using Policia.WPF.View;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -17,11 +21,23 @@ namespace Policia.WPF.ViewModel
 
         public Desaparecido Desaparecido { get; set; }
 
-        public BitmapSource Imagem
+        public ImageSource Imagem
         {
             get
-            {              
-              return null;                
+            {
+                using (var strema = new MemoryStream(this.Desaparecido.Imagem))
+                {
+                    var img = new Bitmap(strema);
+
+                    var hBitmap = img.GetHbitmap();
+
+                    var wpfBitmap = Imaging.CreateBitmapSourceFromHBitmap(
+                                hBitmap, IntPtr.Zero, Int32Rect.Empty,
+                                BitmapSizeOptions.FromEmptyOptions()
+                              );
+
+                    return wpfBitmap;
+                }   
             }
         }
 
